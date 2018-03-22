@@ -1,0 +1,40 @@
+#board_background {
+    background-color: lightgreen;
+}
+#board_beam {
+    background-color: lightskyblue;
+}
+#board_detector {
+    background-color: lightcoral;
+}
+
+.quark {
+    display: inline-block;
+    vertical-align: top;
+    border-radius: 50%;
+    color: white;
+    width: 50px;
+    height: 50px;
+    text-align: center
+}
+.anti {
+    color: black;
+}
+.red {
+    background-color: red;
+}
+.green {
+    background-color: green;
+}
+.blue {
+    background-color: blue;
+}
+.cyan {
+    background-color: cyan;
+}
+.magenta {
+    background-color: magenta;
+}
+.yellow {
+    background-color: yellow;
+}

@@ -1,0 +1,18 @@
+{% for h in hadrons %}
+    <div class="quark c_{{h.quarks.first.color}} {%if h.quarks.first.anti%}anti{%endif} h.quarks.first.flavor">{{h.quarks.first.flavor}}</div>
+{% endfor %}
+<form action="{% place_quarks %}" method="POST">
+    <p><label for="beam_background">Background: </label>
+    <input type="radio" name="beam_background" value="0">
+    <input type="radio" name="beam_background" value="1">
+    <input type="radio" name="beam_background" value="2"></p>
+    <p><label for="beam_detector">Detector: </label>
+    <input type="radio" name="beam_detector" value="0">
+    <input type="radio" name="beam_detector" value="1">
+    <input type="radio" name="beam_detector" value="2"></p>
+    <p><label for="beam_discard">Discard: </label>
+    <input type="radio" name="beam_discard" value="0">
+    <input type="radio" name="beam_discard" value="1">
+    <input type="radio" name="beam_discard" value="2"></p>
+    <p><input type="submit" value="Place Quarks"</p>
+</form>

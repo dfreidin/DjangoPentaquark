@@ -1,0 +1,11 @@
+{% for h in hadrons %}
+    {% if h.num_quarks == 1 %}
+        <div class="quark c_{{e.color}} {%if e.anti%}anti{%endif} e.flavor">{{e.flavor}}</div>
+    {% else %}
+        <div id="h_{{h.id}}" class="hadron">
+            {% for q in h %}
+                <div class="quark c_{{q.color}} {%if q.anti%}anti{%endif} q.flavor">{{q.flavor}}</div>
+            {% endfor %}
+        </div>
+    {% endif %}
+{% endfor %}
